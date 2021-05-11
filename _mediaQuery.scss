@@ -1,0 +1,48 @@
+@media screen and (max-width:700px) {
+    .header {
+        #nice, #nice2 {
+            width: 70%;
+
+            h2,h3 {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .formContainer {
+        width: 100%;
+    }
+
+    .parallax {
+        .content {
+            left: 1px;
+            width: 100%;
+        }
+    }
+
+
+    .choice {      
+        grid-template-columns: 100%;
+        .sector {
+            padding: 20px;
+    
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                background-color: $maincolor;
+                border-radius: 20px;
+                margin: 0px;
+                padding: 10px;
+    
+                &:hover {
+                    background-color: $secondcolor;
+                    color: white;
+                    transition: 0.5s;
+                }
+            }
+        }    }
+}

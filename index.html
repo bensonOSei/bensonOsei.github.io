@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="benson.css">
+    <script src="benson.js"></script>
+    <title>Benson's Web Masterclass</title>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <h1>Benson</h1>
+        <div id="nice">
+            <h2>Web Development Masterclass</h2>
+        </div>
+        <div id="nice2">
+            <h3>Beginner to Advanced</h3>
+        </div>   
+    </div>
+
+    <div class="bars" id="bars" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="sideNav" id="sideNav">
+        <a href="javascript:void(0)" onclick="closeNav()" class="close">&times;</a>
+        <a href="index.php">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="parallax">
+        <div class="content" >
+            <h3 id="cont">Scroll Down To Begin</h3>
+        </div>
+    </div>
+    <div class="choice" id="choice">
+        <h3>What do you want to learn?</h3>
+        <div class="sector">
+            <a href="javascript:void(0)" onclick="cppForm()">Programming(C++)</a>
+        </div>
+        <div class="sector">
+            <a href="javascript:void(0)" onclick="webDev()">Web Development</a>
+        </div>
+    </div>
+
+    <div class="formContainer">
+        <button class="back" id="back" onclick="backToLearn()" title="Close form">&times;</button>
+        <h2 id="head">Fill this Form to begin</h2>
+        <p class="error" id="head2">All fields are required</p>
+
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" name="myForm" onsubmit="return formValidate();" id="cpp">
+            <label for="class">Class</label>
+            <input type="text" name="class" id="class" value="Programming(C++)" readonly>
+            <div class="name">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name" >
+                </div>
+
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name" >    
+                </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <label for="pnumber">Phone Number</label>
+            <input type="tel" name="pnumber" id="pnumber" placeholder="Enter your phone number" >
+            <label for="City">City</label>
+            <input type="text" name="city" id="city" placeholder="Enter your city of residence" > 
+            
+
+            <input type="submit" value="Send">
+
+            <input type="reset" value="Clear">
+
+        </form>
+
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" name="myForm" onsubmit="return formValidate();" id="web">
+            <label for="class">Class</label>
+            <input type="text" name="class" id="class" value="Web Development" readonly>
+            <div class="name">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name" >
+                </div>
+
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name" >    
+                </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <label for="pnumber">Phone Number</label>
+            <input type="tel" name="pnumber" id="pnumber" placeholder="Enter your phone number" >
+            <label for="City">City</label>
+            <input type="text" name="city" id="city" placeholder="Enter your city of residence" > 
+            
+
+            <input type="submit" value="Send">
+
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+
+
+
+
+    <div class="footer">
+        <p>Created by <i>Benson</i></p>
+    </div>
+    
+</body>
+</html>

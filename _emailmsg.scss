@@ -1,0 +1,15 @@
+.message {
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+
+    h1 {
+        color: $secondcolor;
+    }
+
+    p{
+        background-color: $maincolor;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

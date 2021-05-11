@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+
+
+    h1,h2,h3 {
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 4em;
+        color: $secondcolor;
+    }
+
+    h3{
+        font-weight: lighter;
+    }
+
+    #nice{
+        @include niceId();
+        background-color: $maincolor;
+        color: $secondcolor;
+    
+    }
+
+    #nice2 {
+        @include niceId();
+        width: 25%;
+        margin-top: 10px;
+        color: $secondcolor;
+        border: 1px solid $secondcolor;
+    }
+}
