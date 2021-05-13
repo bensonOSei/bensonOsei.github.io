@@ -1,7 +1,37 @@
-.about {
+
+.intro {
     padding: 30px;
     margin: auto;
     width: 75%;
-    height: 100%;
     border-radius: 20px;
+}
+
+.classes {
+    margin: auto;
+    width: 75%;
+
+    p {
+        background-color: $maincolor;
+        background-color: rgba(0, 0, 0, 0.061);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px   rgba(177, 175, 175, 0.534);
+    }
+}
+
+#moreInfor {
+    padding: 30px;
+    margin: auto;
+    width: 75%;
+    border-radius: 20px;
+
+    a{
+        text-decoration: none;
+        color: $maincolor;
+        font-style: italic;
+
+        &:visited {
+            color: $secondcolor;
+        }
+    }
 }
