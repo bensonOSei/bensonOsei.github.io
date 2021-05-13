@@ -21,6 +21,15 @@ function scrollFunc() {
         document.getElementById("cont").style.display="block";
     }
 
+    if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
+        //document.getElementById("cont").innerHTML="Lets Begin";
+        document.getElementById("choice").style.display="grid";
+       
+    } else {
+        //document.getElementById("cont").innerHTML="Scroll Down To Begin";
+        document.getElementById("choice").style.display="none";
+    }
+
 }
 
 function cppForm(){
@@ -50,7 +59,7 @@ function backToLearn(){
 
 }
 
-/*function formValidate() {
+function formValidate() {
     var fname = document.forms["myForm"]["fname"].value;
     var lname = document.forms["myForm"]["lname"].value;
     var email = document.forms["myForm"]["email"].value;
@@ -61,6 +70,8 @@ function backToLearn(){
     if (fname == "") {
         alert("First name must be filled");
         return false;
+    } else if (validName.test(fname)) {
+        alert("First name must contain letters  only");
     }
     if (lname == "") {
         alert("Last name must be filled");
@@ -69,15 +80,19 @@ function backToLearn(){
     if (email == "") {
         alert("Email must be filled");
         return false;
-    }
-    if ( !(pnumber.match(validPhone)) ) {
-        alert("Invalid number");
+    } else if (validEmail.test(email)){
+        alert("Invalid Email \nEmail form = example@email.com");
+
         return false;
     }
+    if ( !(pnumber.match(validPhone))  ) {
+        alert("Invalid number");
+        return false;
+    } 
     if (city = "") {
         alert("City must be filled");
         return false
     }
 
     return true; 
-}*/
+}

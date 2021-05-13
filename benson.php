@@ -33,6 +33,7 @@ $sendTo = $email;
 $subj = "Response recieved";
 $htmlContent = file_get_contents("emailmsg.html");
 $head = "From: benson@kejetia.online";
+$head = "From: benson@kejetia.online";
 
 mail($sendTo,$subj,$htmlContent,$head);
 

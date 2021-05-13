@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="benson.css">
+    <script src="benson.js"></script>
+    <title>Web Development Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <h1>Benson</h1>
+        <div id="nice">
+            <h2>Programming(C++) Masterclass</h2>
+        </div>
+        <div id="nice2">
+            <h3>Beginner to Advanced</h3>
+        </div>   
+    </div>
+
+    <div class="bars" id="bars" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="sideNav" id="sideNav">
+        <a href="javascript:void(0)" onclick="closeNav()" class="close">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="formContainer">
+        <button class="back" onclick="document.location = 'index.html';">Go back</button>
+
+        <h2 id="head">Fill this Form to begin</h2>
+        <p class="error" id="head2">All fields are required</p>
+        
+        <form action="benson.php" method="POST" name="myForm" onsubmit="return formValidate();" id="cpp">
+            <label for="class">Class</label>
+            <input type="text" name="class" id="class" value="Programming(C++)" readonly>
+            <div class="name">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name" >
+                </div>
+
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name" >    
+                </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <label for="pnumber">Phone Number</label>
+            <input type="tel" name="pnumber" id="pnumber" placeholder="Enter your phone number" >
+            <label for="City">City</label>
+            <input type="text" name="city" id="city" placeholder="Enter your city of residence" > 
+            
+
+            <input type="submit" value="Send">
+
+            <input type="reset" value="Clear">
+
+        </form>
+    
+    
+    </div>
+
+    
+    <div class="footer">
+        <p>Created by <i>Benson</i></p>
+    </div>
+    
+</body>
+</html>

@@ -59,6 +59,8 @@ if ($class == "Programming(C++)"){
 $sendTo = $email;
 $subj = "Response recieved";
 $htmlContent = file_get_contents("emailmsg.html");
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $head = "From: benson@kejetia.online";
 
 mail($sendTo,$subj,$htmlContent,$head);
