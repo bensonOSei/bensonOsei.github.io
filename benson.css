@@ -201,7 +201,7 @@ body {
   padding: 10px;
 }
 
-.formContainer input[type=text], .formContainer input[type=email], .formContainer input[type=tel] {
+.formContainer input[type=text], .formContainer input[type=email], .formContainer input[type=tel], .formContainer textarea {
   display: block;
   width: 100%;
   padding: 10px;
@@ -209,12 +209,12 @@ body {
   border-radius: 5px;
 }
 
-.formContainer input[type=text], .formContainer input[type=email], .formContainer input[type=tel] {
+.formContainer input[type=text], .formContainer input[type=email], .formContainer input[type=tel], .formContainer textarea {
   margin: 5px;
   background-color: #ece7e7;
 }
 
-.formContainer input[type=text]:focus, .formContainer input[type=text]:hover, .formContainer input[type=email]:focus, .formContainer input[type=email]:hover, .formContainer input[type=tel]:focus, .formContainer input[type=tel]:hover {
+.formContainer input[type=text]:focus, .formContainer input[type=text]:hover, .formContainer input[type=email]:focus, .formContainer input[type=email]:hover, .formContainer input[type=tel]:focus, .formContainer input[type=tel]:hover, .formContainer textarea:focus, .formContainer textarea:hover {
   outline: none;
   background-color: #d6cfcf;
 }

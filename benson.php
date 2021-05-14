@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
-$name = $email = $gender = $comment = $website = $class = "";
-$totalClassSize = 0;
+$fname = $lname = $email = $city = $pnumber = $class = "";
+$totalClassSize;
 $webClassSize = 0;
 $cppClassSize = 0;
 
@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $fname = test_input($_POST["fname"]);
   $lname = test_input($_POST["lname"]);
   $email = test_input($_POST["email"]);
-  $phnumber = test_input($_POST["pnumber"]);
+  $pnumber = test_input($_POST["pnumber"]);
   $city = test_input($_POST["city"]);
   $class = test_input($_POST["class"]);
 }
@@ -32,8 +32,8 @@ if ($class == "Programming(C++)"){
 $sendTo = $email;
 $subj = "Response recieved";
 $htmlContent = file_get_contents("emailmsg.html");
-$head = "From: benson@kejetia.online";
-$head = "From: benson@kejetia.online";
+$head = 'Content-type: text/html; charset=utf-8' . "\r\n";
+$head .= "From: benson@kejetia.online";
 
 mail($sendTo,$subj,$htmlContent,$head);
 

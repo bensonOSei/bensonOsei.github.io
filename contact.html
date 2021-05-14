@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="benson.css">
     <script src="benson.js"></script>
-    <title>Benson's Web Masterclass</title>
+    <title>Contact</title>
     <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
 </head>
 <body>
@@ -16,8 +16,14 @@
             <h2>Programming Masterclass</h2>
         </div>
         <div id="nice2">
-            <h3>Beginner to Advanced</h3>
+            <h3>Contact Form</h3>
         </div>   
+    </div>
+
+    <div class="intro">
+        <p>Fill the form below for any enquiries. We will respond as soon as 
+            possible, thank you.
+        </p>
     </div>
 
     <div class="bars" id="bars" onclick="openNav()">
@@ -33,20 +39,23 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <div class="parallax">
-        <div class="content" >
-            <h3 id="cont">Scroll Down To Begin</h3>
-        </div>
+    <div class="formContainer">
+        <form action="contact.php" method="POST" onsubmit="return formValidate();">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name...">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name...">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@emal.com...">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
     </div>
-    <div class="choice" id="choice">
-        <h3>What do you want to learn?</h3>
-        <div class="sector">
-            <a href="cpp.html" onclick="cppForm()">Programming(C++)</a>
-        </div>
-        <div class="sector">
-            <a href="web.html" >Web Development</a>
-        </div>
-    </div>
+
+
 
     <div class="footer">
         <p>Created by <i>Benson</i></p>
