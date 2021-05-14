@@ -64,6 +64,7 @@ function formValidate() {
     var lname = document.forms["myForm"]["lname"].value;
     var email = document.forms["myForm"]["email"].value;
     var pnumber = document.forms["myForm"]["pnumber"].value;
+    var message = document.forms["myForm"]["message"].value
     var city = document.forms["myForm"]["city"].value;
     var validPhone = /^\d{10}$/;
 
@@ -92,6 +93,10 @@ function formValidate() {
     if (city = "") {
         alert("City must be filled");
         return false
+    }
+    if (message = "") {
+        alert("Message is required");
+        return false;
     }
 
     return true; 
